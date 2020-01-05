@@ -10,7 +10,7 @@ img {
 }
 /** box-shadow **/
 .box {
-	background-color: #e7e7e7; /* Needed for IE */
+	background-color: #e7e7e7; /*Needed for IE */
 	display: inline-block;
 	-moz-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
 	-webkit-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
@@ -181,12 +181,9 @@ img {
 	text-decoration: underline;
 }
 /*------------ CONTENTS ------------*/
-#contents {
-	padding-bottom: 24px;
-}
 #contents > div.clearfix:first-child {
 	width: 940px;
-	padding: 30px 10px 0;
+	/* padding: 30px 10px 0; */
 }
 #contents img {
 	border: 1px solid rgba(231, 231, 231, 0.8);
@@ -318,27 +315,13 @@ p a:hover {
 }
 .main {
 	float: left;
-	min-height: 960px;
-	width: 600px;
-	padding: 0 0 0 32px;
-}
-.main h1 {
-	margin-bottom: 18px;
-}
-.main h2 {
-	margin-bottom: 12px;
-}
-.main h1 + h2 {
-	margin: 0;
-}
-.main h1 + div.frame3 {
-	margin-top: 36px;
+	min-height: 500%;
+	width: 900px;
 }
 .main > .section {
 	background-position: left bottom;
 	background-repeat: repeat-x;
 	width: 600px;
-	margin-bottom: 16px;
 	margin-left: -28px;
 	padding-left: 30px;
 }
@@ -400,7 +383,6 @@ p a:hover {
 .sidebar {
 	float: left;
 	width: 290px;
-	padding-right: 18px;
 }
 .sidebar > div {
 	margin: 0 0 30px;
@@ -611,25 +593,21 @@ p a:hover {
 	background-position: 0 -196px;
 }
 /*=================PETA======================================*/
-#map{border:1px solid grey;
-width:700px;
-margin:20px;
-height:700px;
+#map{
+width:1700px;
+height:100px;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;
 float:left;
-display:;
 position:relative;
-top:-20px;}
+top: -21px;
+}
 
 #map2{border:1px solid grey;
 width:700px;
 margin:20px;
 height:700px;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;
 float:left;
-display:;
 position:relative;
 top:-20px;}
 
@@ -637,10 +615,8 @@ top:-20px;}
 width:550px;
 height:700px;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;
 float:right;
 margin:25px;
-display:;
 position:relative;
 top:0px;}
 
@@ -648,8 +624,6 @@ top:0px;}
 width:900px;
 height:700px;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;
-display:;
 position:relative;
 left:50px;}
 /*=================PETA======================================*/
@@ -689,8 +663,8 @@ table#tscrol2{
 position:relative;
 border:1px solid grey;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;
-float:left;}
+float:left;
+}
 
 select#pl-lokasi{width:200px;
 height:30px;}
@@ -703,4 +677,4 @@ border-color: #CCCCCC;
 width: 250px; 
 height:200px;
 -moz-border-radius:5px;
-box-shadow: 0 0 7px #000000;}
+}
