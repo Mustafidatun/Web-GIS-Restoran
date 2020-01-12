@@ -54,7 +54,7 @@
             WHERE tb_kategori.nama = 'Chinese'";
       $result = mysqli_query($dbConn, $sql );
       while($row = mysqli_fetch_array($result)){
-        echo" var chineseMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: chineseico}).bindPopup('<a href=\"content/detail_restoran.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Chinese/".$row["foto"]."\"></center>');";
+        echo" var chineseMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: chineseico}).bindPopup('<a href=\"detail_resto.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Chinese/".$row["foto"]."\"></center>');";
         echo ' chineseLayer.addLayer(chineseMarker); ';
       }
       ?>
@@ -81,7 +81,7 @@
             WHERE tb_kategori.nama = 'Padang'";
       $result = mysqli_query($dbConn, $sql );
       while($row = mysqli_fetch_array($result)){
-        echo" var padangMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: padangico}).bindPopup('<a href=\"content/detail_restoran.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Padang/".$row["foto"]."\"></center>');";
+        echo" var padangMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: padangico}).bindPopup('<a href=\"detail_resto.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Padang/".$row["foto"]."\"></center>');";
         echo ' padangLayer.addLayer(padangMarker); ';
       }
       ?>
@@ -108,7 +108,7 @@
             WHERE tb_kategori.nama = 'FastFood'";
       $result = mysqli_query($dbConn, $sql );
       while($row = mysqli_fetch_array($result)){
-        echo" var fastfoodMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: fastfoodico}).bindPopup('<a href=\"content/detail_restoran.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Fastfood/".$row["foto"]."\"></center>');";
+        echo" var fastfoodMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: fastfoodico}).bindPopup('<a href=\"detail_resto.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Fastfood/".$row["foto"]."\"></center>');";
         echo ' fastfoodLayer.addLayer(fastfoodMarker); ';
       }
       ?>
@@ -135,7 +135,7 @@
             WHERE tb_kategori.nama = 'Cafetaria'";
       $result = mysqli_query($dbConn, $sql );
       while($row = mysqli_fetch_array($result)){
-        echo" var cafetariaMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: cafetariaico}).bindPopup('<a href=\"content/detail_restoran.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Cafetaria/".$row["foto"]."\"></center>');";
+        echo" var cafetariaMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: cafetariaico}).bindPopup('<a href=\"detail_resto.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Cafetaria/".$row["foto"]."\"></center>');";
         echo ' cafetariaLayer.addLayer(cafetariaMarker); ';
       }
       ?>
@@ -162,7 +162,7 @@
             WHERE tb_kategori.nama = 'Seafood'";
       $result = mysqli_query($dbConn, $sql );
       while($row = mysqli_fetch_array($result)){
-        echo" var seafoodMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: seafoodico}).bindPopup('<a href=\"content/detail_restoran.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Seafood/".$row["foto"]."\"></center>');";
+        echo" var seafoodMarker = new L.Marker.Text(new L.LatLng(".$row["latitude"].' , '.$row["longitude"]."), '',{icon: seafoodico}).bindPopup('<a href=\"detail_resto.php?id_restoran=".$row["id_restoran"]."\"target=\"_blank\">".$row['nama']."<br><center><img width=\"80px;\" src=\"foto/Seafood/".$row["foto"]."\"></center>');";
         echo ' seafoodLayer.addLayer(seafoodMarker); ';
       }
       ?>
